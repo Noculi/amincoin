@@ -29,6 +29,22 @@ There are 3 types of branches in this repository:
 
 *Master and maintenance branches are exclusively mutable by release. Planned releases will always have a development branch and pull requests should be submitted against those. Maintenance branches are there for* ***bug fixes only,*** *please submit new features against the development branch with the highest version.*
 
+## Compiling - Get the children
+
+#### Compile on Linux (Ubuntu)
+* `cd src/`
+* `sudo apt-get install libdb5.3++-dev libssl-dev build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev git qt-sdk libminiupnpc-dev`
+* `make -f makefile.unix USE_UPNP=-`
+
+#### Compile on macOS
+* Install MacPorts
+* `sudo port install boost db48 qt4-mac openssl miniupnpc git`
+* `cd src\`
+* `make -f makefile.osx USE_UPNP=-`
+
+#### Compile on Windows
+* (Coming Soon)
+
 ## AAAAAAA TOO MANY QUESTIONS
 
 ### How much Amin can exist? – So many children!
