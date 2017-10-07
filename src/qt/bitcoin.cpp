@@ -121,7 +121,7 @@ int main(int argc, char *argv[])
     // Do this early as we don't want to bother initializing if we are just calling IPC
     for (int i = 1; i < argc; i++)
     {
-        if (boost::algorithm::istarts_with(argv[i], "foocoin:"))
+        if (boost::algorithm::istarts_with(argv[i], "amincoin:"))
         {
             const char *strURI = argv[i];
             try {
@@ -172,9 +172,9 @@ int main(int argc, char *argv[])
     app.setOrganizationName("FooCoin");
     app.setOrganizationDomain("we-have-no-domain-yet.nex");
     if(GetBoolArg("-testnet")) // Separate UI settings for testnet
-        app.setApplicationName("foocoin-qt-testnet");
+        app.setApplicationName("amincoin-qt-testnet");
     else
-        app.setApplicationName("foocoin-qt");
+        app.setApplicationName("amincoin-qt");
 
     // ... then GUI settings:
     OptionsModel optionsModel;
@@ -278,7 +278,7 @@ int main(int argc, char *argv[])
                 // Check for URI in argv
                 for (int i = 1; i < argc; i++)
                 {
-                    if (boost::algorithm::istarts_with(argv[i], "foocoin:"))
+                    if (boost::algorithm::istarts_with(argv[i], "amincoin:"))
                     {
                         const char *strURI = argv[i];
                         try {
