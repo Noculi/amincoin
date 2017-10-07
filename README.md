@@ -33,12 +33,12 @@ There are 3 types of branches in this repository:
 
 #### Compile on Linux (Ubuntu)
 * `cd src/`
-* `sudo apt-get install libdb5.3++-dev libssl-dev build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev git qt-sdk libminiupnpc-dev`
+* `sudo apt-get install libdb5.3++-dev libssl-dev build-essential libboost-all-dev libcurl4-openssl-dev git qt-sdk libminiupnpc-dev`
 * `make -f makefile.unix USE_UPNP=-`
 
 #### Compile on macOS
 * Install MacPorts
-* `sudo port install boost db48 qt4-mac openssl miniupnpc git`
+* `sudo port install boost db53 qt4-mac openssl miniupnpc git`
 * `cd src\`
 * `make -f makefile.osx USE_UPNP=-`
 
